@@ -41,11 +41,17 @@ kwadraty = [i**2 for i in range(5,5000,5)]
 print(kwadraty)
 
 #użycie modułów
+import funkcje.bfunkcje as bf
+
 
 def witaj(imie):
     return f'Miło Cię widzieć {imie}'
 
-def osoba(funkcja,imie):
-    return funkcja(imie)
+def osoba(funkcja,*args):
+    return funkcja(*args)
 
 print(osoba(witaj,"Olaf"))
+
+print(osoba(bf.konkurs,"Anna",66,13))
+
+print(osoba(bf.bonus,78,10))
