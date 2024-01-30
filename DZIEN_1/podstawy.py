@@ -33,3 +33,19 @@ print(s[::-1])
 parzyste = list(filter(lambda x:x%2==0,liczba))
 
 print(parzyste)
+
+cube = list(map(lambda x:x**3,liczba))
+print(cube)
+
+kwadraty = [i**2 for i in range(5,5000,5)]
+print(kwadraty)
+
+#użycie modułów
+
+def witaj(imie):
+    return f'Miło Cię widzieć {imie}'
+
+def osoba(funkcja,imie):
+    return funkcja(imie)
+
+print(osoba(witaj,"Olaf"))
